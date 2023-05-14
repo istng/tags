@@ -1,0 +1,33 @@
+{
+  "name": "tags",
+  "version": "1.0.0",
+  "description": "Web for tagging stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istng/tags.git"
+  },
+  "keywords": [
+    "tags",
+    "tag",
+    "card",
+    "cards"
+  ],
+  "author": "Iván Guralnik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/istng/tags/issues"
+  },
+  "homepage": "https://github.com/istng/tags#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.0"
+  }
+}

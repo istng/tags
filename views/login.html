@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #e0e0e0;
+    }
+
+    button {
+      -webkit-font-smoothing: antialised;
+      border: 1px solid black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0);
+      color: black;
+      cursor: pointer;
+      font-size: 16px;
+      width: 250px;
+      height: 50px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    input {
+      width: 300px;
+      border-style: none;
+      background-color: white;
+      font-size: 16px;
+      padding: 10px 7px;
+    }
+
+    #page-title {
+      text-align: center;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  </style>
+  <body>
+    <div id="page-title">Login Comparison Tool</div>
+    <form method="POST" action="/authenticate">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit">LOGIN</button>
+    </form>
+
+  </body>
+</html>
