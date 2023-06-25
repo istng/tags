@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+#tags-and-edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tags-input {
+  width: 55vw;
+}
+
+.content-area {
+  width: 70vw;
+  height: 10vh;
+}
+
+.tags-input,
+.content-area {
+  background-color: #282828;
+  color: white
+}
+
+.create-card,
+.edit-card {
+  background-color: rgba(0,0,0,0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+#create-and-cancel-container,
+#save-and-delete-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

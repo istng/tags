@@ -1,0 +1,44 @@
+#edit-card-container,
+#new-card-container {
+  visibility: hidden;
+  opacity: 0;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: #141414;
+}
+
+#cards-tower {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+
+#search-and-new-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

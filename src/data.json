@@ -1,0 +1,26 @@
+[
+  {
+    "tags": ["react", "frontend", "javascript"],
+    "content": "React is a JavaScript library for building user interfaces."
+  },
+  {
+    "tags": ["javascript", "frontend"],
+    "content": "JavaScript is a programming language commonly used for web development."
+  },
+  {
+    "tags": ["css", "frontend"],
+    "content": "CSS is a stylesheet language used for describing the look and formatting of a document written in HTML."
+  },
+  {
+    "tags": ["python", "backend"],
+    "content": "Python is a high-level programming language known for its simplicity and readability."
+  },
+  {
+    "tags": ["html", "frontend"],
+    "content": "HTML is the standard markup language for creating web pages and web applications."
+  },
+  {
+    "tags": ["react", "frontend", "javascript"],
+    "content": "React components are reusable and help to organize the user interface."
+  }
+]

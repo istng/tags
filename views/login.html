@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #141414;
+    }
+
+    button {
+      -webkit-font-smoothing: antialised;
+      border: 1px solid white;
+      font-family: 'Inconsolata', monospace;
+      font-weight: bold;
+      background-color: #282828;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      width: 250px;
+      height: 50px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    button:hover {
+      background-color: white;
+      color: #141414;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    input {
+      width: 300px;
+      border-style: none;
+      background-color: white;
+      font-size: 16px;
+      padding: 10px 7px;
+    }
+
+    #page-title {
+      text-align: center;
+      color: white;
+      font-family: 'Inconsolata', monospace;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  </style>
+  <body>
+    <div id="page-title">Tags Login</div>
+    <form method="POST" action="/authenticate">
+      <input type="hidden" name="redirectUrl" id="redirectUrlInput">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit">LOGIN</button>
+    </form>
+    
+    <script>
+      const redirectUrlInput = document.querySelector('#redirectUrlInput');
+      redirectUrlInput.value = window.location.href;
+    </script>
+  </body>
+</html>
